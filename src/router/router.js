@@ -5,18 +5,22 @@ import vDetailNews from "@/components/v-detail-news.vue";
 
 const routes = [
   {
-    path: "/",
+    path: '/',
+    redirect: { name: 'blockNews' }
+  },
+  {
+    path: "/vue-router/",
     name: "blockNews",
     component: vBlockNews,
   },
   {
-    path: "/simple-news",
+    path: "/vue-router/simple-news",
     name: "simpleNews",
     component: vSimpleNews,
     props: true,
   },
   {
-    path: "/news",
+    path: "/vue-router/news",
     name: "news",
     component: vDetailNews,
   },
